@@ -162,17 +162,15 @@ class TimeService : Disposable {
     private fun ActivityWrapper.applyIDEInfo(): ActivityWrapper {
         val ideType = currentIDEType
         largeImageKey = ideType.icon
-        largeImageText = ideType.name
+        largeImageText = "In: JetBrains ${ideType.title}"
         return this
     }
 
     private fun ActivityWrapper.applyFileInfo(): ActivityWrapper {
         editingFile?.let {
             val type = getFileTypeByName(it.type, it.extension)
-            smallImageKey = largeImageKey // swap
-            smallImageText = largeImageText // swap
-            largeImageKey = type.icon
-            largeImageText = type.name
+            smallImageKey = type.icon
+            smallImageText = type.typeName
         }
         return this
     }

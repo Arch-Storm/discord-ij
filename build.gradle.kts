@@ -40,24 +40,24 @@ tasks {
         untilBuild.set("233.*")
     }
 
-    signPlugin {
-        certificateChain.set(file("token/chain.crt").readText())
-        privateKey.set(file("token/private.pem").readText())
-        password.set(System.getenv("PRIVATE_KEY_PASSWORD"))
-    }
+    //signPlugin {
+    //    certificateChain.set(file("token/chain.crt").readText())
+    //    privateKey.set(file("token/private.pem").readText())
+    //    password.set(System.getenv("PRIVATE_KEY_PASSWORD"))
+    //}
 
-    publishPlugin {
-        token.set(System.getenv("PUBLISH_TOKEN"))
-    }
+   // publishPlugin {
+    //    token.set(System.getenv("PUBLISH_TOKEN"))
+    //}
 
     runIde {
-//        ideDir.set(file(
-//            "/Users/re/Library/Application Support/JetBrains/Toolbox/apps/Gateway/ch-0/231.9011.34/JetBrains Gateway.app/Contents"
-//        ))
-//        ideDir.set(
-//            file(
-//                "/Users/re/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/223.8836.50/WebStorm.app/Contents"
-//            )
-//        )
+        //ideDir.set(file(
+       //     "/Users/re/Library/Application Support/JetBrains/Toolbox/apps/Gateway/ch-0/231.9011.34/JetBrains Gateway.app/Contents"
+        //))
+        //ideDir.set(
+       //     file(
+       //         "/Users/re/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/223.8836.50/WebStorm.app/Contents"
+       //     )
+       // )
     }
 }
