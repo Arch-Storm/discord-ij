@@ -162,7 +162,7 @@ class TimeService : Disposable {
     private fun ActivityWrapper.applyIDEInfo(): ActivityWrapper {
         val ideType = currentIDEType
         largeImageKey = ideType.icon
-        largeImageText = "In: JetBrains ${ideType.title}"
+        largeImageText = "JetBrains ${ideType.title}"
         return this
     }
 
