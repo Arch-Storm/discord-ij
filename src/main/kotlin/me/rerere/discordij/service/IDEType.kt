@@ -7,11 +7,11 @@ enum class IDEType(
     val title: String,
     val icon: String
 ) {
-    IDEA_ULTIMATE("IntelliJ IDEA Ultimate", "idea"),
-    IDEA_COMMUNITY("IntelliJ IDEA Community", "idea"),
-    WEBSTORM("WebStorm", "webstorm"),
-    PYCHARM("PyCharm", "pycharm"),
-    CLION("CLion", "clion"),
+    IDEA_ULTIMATE("IntelliJ IDEA Ultimate", "https://raw.githubusercontent.com/Arch-Storm/icons/master/png/intellij.png"),
+    IDEA_COMMUNITY("IntelliJ IDEA Community", "https://raw.githubusercontent.com/Arch-Storm/icons/master/png/intellij.png"),
+    WEBSTORM("WebStorm", "https://raw.githubusercontent.com/Arch-Storm/icons/master/png/webstorm.png"),
+    PYCHARM("PyCharm", "https://raw.githubusercontent.com/Arch-Storm/icons/master/png/pycharm.png"),
+    CLION("CLion", "https://raw.githubusercontent.com/Arch-Storm/icons/master/png/clion.png"),
     GOLAND("GoLand", "goland"),
     RIDER("Rider", "rider"),
     PHPSTORM("PhpStorm", "phpstorm"),
